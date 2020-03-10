@@ -58,6 +58,13 @@ body {
   clear: both;
 }
 
+header {
+  height: 64px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
 .header-menus {
   float: right;
 }
