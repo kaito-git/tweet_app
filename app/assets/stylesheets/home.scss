@@ -66,9 +66,12 @@ header {
 }
 
 .header-logo {
-  font-size: 22px;
-  color: white;
   padding-left: 20px;
+}
+
+.header-logo a {
+  color: white;
+  font-size: 22px;
 }
 
 .header-menus {
