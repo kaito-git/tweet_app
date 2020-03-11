@@ -1,3 +1,4 @@
+/* reset ================================ */
 * {
   box-sizing: border-box;
 }
@@ -34,6 +35,7 @@ form input[type="submit"] {
   cursor: pointer;
 }
 
+/* 共通レイアウト ================================ */
 body {
   color: #2d3133;
   background-color: #3ecdc6;
@@ -58,6 +60,7 @@ body {
   clear: both;
 }
 
+/* ヘッダー ================================ */
 header {
   height: 64px;
   position: absolute;
@@ -66,50 +69,100 @@ header {
 }
 
 .header-logo {
-  padding-left: 20px;
   float: left;
+  padding-left: 20px;
+  color: white;
+  font-size: 22px;
   line-height: 64px;
 }
 
-.header-logo a {
+.header-logo a{
   color: white;
   font-size: 22px;
 }
 
 .header-menus {
   float: right;
-  color: white;
+  padding-right: 20px;
 }
 
 .header-menus li {
   float: left;
-  margin-right: 10px;
   line-height: 64px;
+  font-size: 13px;
+  color: white;
+  padding-left: 15px;
+}
+
+.header-menus a {
+  float: left;
+  font-size: 13px;
   color: white;
 }
 
+.header-menus .fa {
+  padding-right: 5px;
+}
+
+.header-menus input[type="submit"] {
+  padding: 0 20px;
+  float: left;
+  line-height: 64px;
+  color: white;
+  margin: 0;
+  font-size: 13px;
+}
+
+/* top ================================ */
 .top-main {
+  padding: 200px 0 100px;
   text-align: center;
+  position: absolute;
+  top: 0;
   width: 100%;
   height: auto;
+  min-height: 100%;
   color: white;
-  background-image: url("/gt-r1411_04_l.jpg");
+  background-color: #3ecdc6;
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;
+  background-image: url("/gt-r1411_04_l.jpg");
 }
 
-.top-message h2{
+.top-message {
+  position: relative;
+}
+
+.top-main h2 {
   font-size: 70px;
   font-weight: 500;
-  color: #00ffff;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
 }
 
-.top-message p{
+.top-main p {
   font-size: 24px;
 }
 
+/* about ================================ */
 .about-main {
-  text-align: center;
   padding: 180px 8% 0;
+  color: white;
+}
+
+.about-main h2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.about-main p {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.about-img {
+  width: 84%;
 }
